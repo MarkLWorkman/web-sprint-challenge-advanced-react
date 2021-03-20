@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import axios from "axios";
 
 export default class PlantList extends Component {
@@ -14,7 +14,7 @@ export default class PlantList extends Component {
   //   - fetch data from the server endpoint - http://localhost:3333/plants
   //   - set the returned plants array to this.state.plants
   componentDidMount() {
-    axios
+    return axios
       .get("http://localhost:3333/plants")
       .then((response) => {
         this.setState({
@@ -27,11 +27,6 @@ export default class PlantList extends Component {
   }
 
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
-  componentDidMount() {
-    axios.get("http://localhost:3333/plants").then((res) => {
-      console.log(res);
-    });
-  }
 
   render() {
     return (
