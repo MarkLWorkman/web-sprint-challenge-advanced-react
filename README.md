@@ -143,11 +143,15 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What are the main differences between a stateful and a functional component?
+   // The main difference is that the stateful component keeps track of state data.
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+   // ComponentWillMount gets called before the render method. ComponentWillUpdate gets called right before the component renders and after right after shouldComponentUpdate
 
 3. Define stateful logic.
+   // Any code that uses state with the help of hooks.
 
 4. What are the three step of creating a successful test? What is done in each phase?
-
-test codegrade
+   // 1.) Arrange => This is where we set up the tests.
+   // 2.) Act => This is where we actually pull parts of the DOM.
+   // 3.) Assert => This is where we see if it actually does what we are testing for.
